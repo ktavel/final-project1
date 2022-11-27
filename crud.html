@@ -1,53 +1,65 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-    <title>
-        HTML CRUD with JS
-    </title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+
+    
+    <title>Bike Shop</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
-
 <body>
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                    <label>Bike Name</label><label class="validation-error hide" id="bikeNameValidationError">*</label>
+
+<table>
+    <tr>
+        <td>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <!-- event.preventDefault(); -->
+                <div>
+                    <label>Bike Name</label>
+                    <label class="validation-error hide" id="bikeNameValidationError">*</label>
                     <input type="text" name="bikeName" id="bikeName">
-                    </div>
-                    <div>
-                        <label>Attribute</label>
-                        <input type="text" name="attribute" id="Attribute">
-                        </div>
-                        <div>
-                            <label>Age</label>
-                            <input type="text" name="Age" id="Age">
-                            </div>
-                            <div class="form-action-buttons">
-                                <input type="submit" value="Submit">
-                            </div>
-                </form>
-            </td>
-            <td>
-                <table class="list" id="bikeList">
-                    <thead>
-                        <tr>
-                            <th>Bike Name</th>
-                            <th>Attribute</th>
-                            <th>Age</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                </div>
+                <div>
+                    <label>Attribute</label>
+                    <input type="text" name="Attribute" id="Attribute">
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="text" name="Age" id="Age">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </td>
+        <td>
+            <table class="list" id="bikeList">
+                <thead>
+                    <tr>
+                        <th>Bike Name</th>
+                        <th>Attribute</th>
+                        <th>Age</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
 
-    <script src="crud.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
