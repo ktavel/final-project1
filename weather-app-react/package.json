@@ -1,4 +1,14 @@
 {
+  "scripts": {
+    "start": "node App.js"
+  }
+}
+
+
+
+
+
+{
   "name": "weather-app-react",
   "version": "0.1.0",
   "private": true,
